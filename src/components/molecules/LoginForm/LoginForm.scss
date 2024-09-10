@@ -1,0 +1,38 @@
+.login_form__title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #FE871F;
+}
+
+.login_form {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login_form__forgot_password {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    p {
+        margin: 12px;
+        font-size: large;
+        color: #FE871F;
+    }
+}
+
+.login_form__button {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:576px) {
+    .login_form__forgot_password {
+        justify-content: center;
+    }
+}

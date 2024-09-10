@@ -1,0 +1,26 @@
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+.input__field {
+    width: auto;
+    padding: 8px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    &__input {}
+
+    &--orange {
+        color: #FE871F;
+    }
+}
+.input__image{
+    transform: scale(1.2);
+}
+.input__line{
+    margin: 0;
+}
