@@ -1,0 +1,33 @@
+.button_navigate {
+    &__container {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 18px;
+        padding: 0px 12px;
+        border-radius: 8px;
+        margin: 4px 2px;
+
+        &:hover {
+            background-color: #fe871fca;
+        }
+        p{
+            margin: 0;
+        }
+    }
+
+    &__image {
+        padding-left: 12px;
+    }
+
+    &__content {
+        flex-grow: 1;
+
+    }
+    &__hr{
+        height: 1px;
+        border-bottom: 2px solid rgba(254, 135, 31, 0.2823529412);
+    }
+}
+
