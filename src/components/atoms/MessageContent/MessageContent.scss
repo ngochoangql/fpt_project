@@ -1,0 +1,34 @@
+.message_content__container {
+    border: none;
+    margin: 8px;
+    &--ai {
+        display: flex;
+        justify-content: start;
+     
+    }
+    &--user{
+        display: flex;
+        justify-content: end;
+    }
+}
+.message_content {
+
+    &--ai {
+        background-color: rgb(48, 47, 45);
+        color: aliceblue;
+        border-radius: 8px;
+     
+    }
+    &--user{
+        background-color: rgb(220, 217, 214);
+        color: rgb(33, 35, 36);
+        border-radius: 8px;
+        
+    }
+}
+
+.message_content {
+    padding: 8px;
+    margin: 2px;
+    
+}
