@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 import './MessageRequest.scss'
-function MessageRequest({onChange,submitRequest,cleanMessages}) {
+const MessageRequest  = ({onChange,submitRequest,cleanMessages}) =>{
   return (
     <div className='message_request__container'>
         <img onClick={cleanMessages} className='message_request__clean' src="images/clean_icon.png"/>

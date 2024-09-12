@@ -1,6 +1,6 @@
 import React from 'react'
 import './ChatBoxHeader.scss'
-function ChatBoxHeader() {
+const ChatBoxHeader = () => {
   return (
     <div className='chat_box_header__container'>
     <img className='chat_box_header__logo' src='images/Logo.png'/>

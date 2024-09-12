@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { FC, useEffect, useRef, useState } from 'react'
 import './ChatPage.scss'
-import ChatBox from '../../molecules/ChatBox/ChatBox'
-import ChatBoxHeader from '../../molecules/ChatBoxHeader/ChatBoxHeader'
-import MessageRequest from '../../molecules/MessageRequest/MessageRequest'
-function ChatPage() {
+import ChatBox from '../../molecules/ChatBox/ChatBox.tsx'
+import ChatBoxHeader from '../../molecules/ChatBoxHeader/ChatBoxHeader.tsx'
+import MessageRequest from '../../molecules/MessageRequest/MessageRequest.tsx'
+const ChatPage :FC = ()  =>{
     const [isChatting,setIsChatting] = useState(false)
     const [messages,setMessages] = useState([{content:"Helo AI !",obj:"user"},{content:"May can i help you?",obj:"ai"}])
     const [messageRequest,setMessageRequest] = useState("")

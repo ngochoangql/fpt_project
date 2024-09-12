@@ -1,6 +1,6 @@
 import React from "react";
 import "./Input.scss";
-function Input({label,onChange,type,placeholder,imageUrl}) {
+const Input = ({label,onChange,type,placeholder,imageUrl}) => {
   return (
     <div>
       <div className="input">

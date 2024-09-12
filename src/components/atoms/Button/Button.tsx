@@ -1,6 +1,6 @@
 import React from 'react'
 import './Button.scss'
-function Button({onClick}) {
+const Button = ({onClick}) => {
   return (
     <div className='button'>
     <div className='button__background'></div>
