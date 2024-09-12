@@ -1,6 +1,6 @@
 import React from "react";
 import "./ButtonNavigate.scss";
-function ButtonNavigate({ imgButton, content }) {
+const ButtonNavigate = ({ imgButton, content }) => {
   return (
     <div>
       <div className="button_navigate__container">

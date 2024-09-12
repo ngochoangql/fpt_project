@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import SearchInput from "../../atoms/SearchInput/SearchInput";
+import SearchInput from "../../atoms/SearchInput/SearchInput.tsx";
 import "./FilePageHeader.scss";
-function FilePageHeader({
+const FilePageHeader = ({
   searchRef,
   isMenu,
   toggleMenu,
   isSearch,
   setIsSearch,
-}) {
+}) => {
   const [search, setSearch] = useState(isSearch);
   const [menu, setMenu] = useState(isMenu);
   return (

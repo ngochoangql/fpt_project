@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Input from "../../atoms/Input/Input";
-import LoginForm from "../../molecules/LoginForm/LoginForm.js";
+import React, { FC, useState } from "react";
+import Input from "../../atoms/Input/Input.tsx";
+import LoginForm from "../../molecules/LoginForm/LoginForm.tsx";
 import './LoginPage.scss'
-function LoginPage() {
+const LoginPage : FC = () => {
   const [formLogin, setFormLogin] = useState({ email: "", password: "" });
   const handleInputChange = (field, value) => {
     setFormLogin({

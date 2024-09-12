@@ -1,7 +1,7 @@
 import React from "react";
 import "./TypeMessage.scss";
-import InputFIleManage from "../../atoms/InputFIleManage/InputFIleManage";
-function TypeMessage() {
+import InputFIleManage from "../../atoms/InputFIleManage/InputFIleManage.tsx";
+const TypeMessage = () => {
   return (
     <div className="type_message__container">
       <InputFIleManage />

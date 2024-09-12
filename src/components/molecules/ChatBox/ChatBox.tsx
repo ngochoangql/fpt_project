@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import './ChatBox.scss'
-import MessageContent from '../../atoms/MessageContent/MessageContent'
-function ChatBox({messages,mainref,isChatting}) {
+import MessageContent from '../../atoms/MessageContent/MessageContent.tsx'
+const ChatBox = ({messages,mainref,isChatting}) => {
  
   return (
     <div className={isChatting ? `chat_box__container` :`chat_box__container__logo`}  ref={mainref}>

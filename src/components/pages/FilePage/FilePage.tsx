@@ -1,23 +1,23 @@
-import React, { useEffect, useRef, useState } from "react";
-import ButtonNavigate from "../../atoms/ButtonNavigate/ButtonNavigate";
-import NavColumn from "../../molecules/NavColumn/NavColumn";
+import React, { FC, RefObject, useEffect, useRef, useState } from "react";
+import ButtonNavigate from "../../atoms/ButtonNavigate/ButtonNavigate.tsx";
+import NavColumn from "../../molecules/NavColumn/NavColumn.tsx";
 import "./FilePage.scss";
-import FilePageHeader from "../../molecules/FilePageHeader/FilePageHeader";
-import TypeMessage from "../../molecules/TypeMessage/TypeMessage";
-import Select from "../../atoms/Select/Select";
-function FilePage() {
+import FilePageHeader from "../../molecules/FilePageHeader/FilePageHeader.tsx";
+import TypeMessage from "../../molecules/TypeMessage/TypeMessage.tsx";
+import Select from "../../atoms/Select/Select.tsx";
+const FilePage: FC = () => {
   const [isSearch, setIsSearch] = useState(false);
   const [isMenu, setIsMenu] = useState(false);
   const [navSelected, setNavSelected] = useState(0);
-  const navRef = useRef(null);
-  const searchRef = useRef(null);
-  const handleClickOutside = (event) => {
+  const navRef: RefObject<HTMLDivElement> = useRef(null);
+  const searchRef: RefObject<HTMLInputElement> = useRef(null);
+  const handleClickOutside = (event: MouseEvent): void => {
     // Kiểm tra nếu click bên ngoài nav và menu đang mở
-    if (isMenu && navRef.current && !navRef.current.contains(event.target)) {
+    if (isMenu && navRef.current && !navRef.current.contains(event.target as Node)) {
       setIsMenu(false); // Đóng menu
     }
 
-    if (searchRef.current && !searchRef.current.contains(event.target)) {
+    if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
       setIsSearch(false); // Đóng menu
 
       console.log("FFFFFFFFFFFFFFFFFFFFF", isSearch);
@@ -62,7 +62,7 @@ function FilePage() {
           ref={navRef}
           className={`nav_column  ${isMenu ? " nav_column--show" : ""}`}
         >
-          <NavColumn navRef={navRef} />
+          <NavColumn  />
         </div>
         {navSelected === 0 ? (
           <div className="file_page__main">
@@ -82,6 +82,6 @@ function FilePage() {
       </div>
     </div>
   );
-}
+};
 
 export default FilePage;

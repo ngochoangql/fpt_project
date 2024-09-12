@@ -1,6 +1,6 @@
 import React from 'react'
 import './SearchInput.scss'
-function SearchInput() {
+const SearchInput = () => {
   return (
     <div className='search_input__container'>
     <img src='images/loupe.png'/>

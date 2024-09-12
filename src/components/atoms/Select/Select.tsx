@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Select.scss";
-function Select() {
+const Select = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="select__container">
